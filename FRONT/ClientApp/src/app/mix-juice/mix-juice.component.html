@@ -1,0 +1,65 @@
+<div class="back">
+
+    <title>Mix Page</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <div class="container">
+        <form [formGroup]="mixForm" ClickMix >
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="container">
+                        <div class="d-flex justify-content-center h-100">
+                            <div class="card">
+                                <div class="card-header">
+                                    <span>Enter Product Type ( 1- milk, 2- Orange )</span>
+                                </div>
+                                <div class="card-body">
+                                    <input type="text" class="form-control" (ngModelChange)="typeProduct();" id="type" formControlName="productIndex"
+                                        placeholder="Enter Product Index">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="container">
+                        <div class="d-flex justify-content-center h-100">
+                            <div class="card">
+                                <div class="card-header">
+                                    <span>You Have Selected a Product</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="Message">
+                                        {{ Message }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container">
+                        <div class="card" style="margin-top: -30px !important;">
+                            <div class="card-header">
+                                <span>BARTENDER JOE</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="Message">
+                                    {{MessageResult}}
+                                </div>
+                            </div>
+                            <div class="card-header">
+                                <button type="button" id="click" (click)="MixDrink()" class="btn mix_btn">Mix Drink</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>

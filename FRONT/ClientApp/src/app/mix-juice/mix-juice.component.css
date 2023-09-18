@@ -1,0 +1,39 @@
+
+.back{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100% !important;
+    font-family: 'Numans', sans-serif;
+    }
+    .container{
+    height: 100%;
+    align-content: center;
+    }
+
+    .card{
+    height: 200px !important;
+    margin-top: 100px ;
+    margin-bottom: auto;
+    background-color: rgba(247, 242, 242, 0.76) !important;
+    }
+    .card-header h3{
+    color: white;
+    }
+
+    .Message{
+    background-color: rgb(219, 209, 209);
+    border-radius: 10px;
+    font-size: medium;
+    text-align: center;
+    }
+
+    .mix_btn{
+    color: black;
+    background-color: #1bb5fd;
+    width: 150px;
+    }
+    .mix_btn:hover{
+    color: black;
+    background-color: white;
+    }
+  
